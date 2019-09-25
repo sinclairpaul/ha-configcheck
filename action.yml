@@ -1,0 +1,10 @@
+name: 'Home Assistant Config Check'
+description: 'Home Assistant Config Check Action'
+author: 'Paul Sinclair <24625998+sinclairpaul@users.noreply.github.com>'
+branding:
+  icon: 'play'
+  color: 'purple'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: ['${{ inputs.haversion }}']
