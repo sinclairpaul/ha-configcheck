@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:$*
+FROM homeassistant/home-assistant:latest
 
 RUN apk add --no-cache \
   git \
