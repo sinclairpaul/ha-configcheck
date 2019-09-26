@@ -1,3 +1,7 @@
 FROM homeassistant/home-assistant:latest
 
-ENTRYPOINT [""]
+COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
