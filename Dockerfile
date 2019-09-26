@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:latest
+FROM homeassistant/home-assistant:${HABRANCH}
 
 COPY entrypoint.sh /entrypoint.sh
 

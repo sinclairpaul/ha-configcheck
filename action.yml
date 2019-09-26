@@ -1,6 +1,11 @@
 name: 'Home Assistant Config Check Latest'
 description: 'Home Assistant Config Check Action'
 author: 'Paul Sinclair <24625998+sinclairpaul@users.noreply.github.com>'
+inputs:
+  habranch:
+    description: 'HA branch to check'
+    required: false
+    default: 'latest'
 branding:
   icon: 'play'
   color: 'purple'
