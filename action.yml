@@ -4,7 +4,7 @@ author: 'Paul Sinclair <24625998+sinclairpaul@users.noreply.github.com>'
 inputs:
   habranch:
     description: 'HA branch to check'
-    required: false
+    required: true
     default: 'latest'
 branding:
   icon: 'play'
@@ -12,3 +12,5 @@ branding:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.habranch }}
