@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:${HABRANCH}
+FROM homeassistant/home-assistant:${INPUT_HABRANCH}
 
 COPY entrypoint.sh /entrypoint.sh
 
