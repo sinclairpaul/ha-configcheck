@@ -1,7 +1,5 @@
-FROM homeassistant/home-assistant:${INPUT_HABRANCH}
+FROM homeassistant/home-assistant:latest
 
 COPY entrypoint.sh /entrypoint.sh
-
-RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
