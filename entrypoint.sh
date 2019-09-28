@@ -3,7 +3,7 @@
 set -e
 
 python3 -m homeassistant --version
-cp "$1" secrets.yaml
+cp "$*" secrets.yaml
 python3 -m homeassistant \
         --config ./ \
         --script check_config \
