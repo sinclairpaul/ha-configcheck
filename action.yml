@@ -4,6 +4,11 @@ author: 'Paul Sinclair <24625998+sinclairpaul@users.noreply.github.com>'
 branding:
   icon: 'home'
   color: 'blue'
+inputs:
+  secretsfile:
+    description: 'Filename of secrets to lint'
+    required: true
+    default: secrets.yaml
 runs:
   using: 'docker'
   image: 'Dockerfile'
