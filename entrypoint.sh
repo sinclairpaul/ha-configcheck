@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
-sh -c "python3 -m homeassistant --version"
-sh -c "cp $* secrets.yaml"
-sh -c "python3 -m homeassistant \
+python3 -m homeassistant --version
+cp "$*" secrets.yaml
+python3 -m homeassistant \
         --config ./ \
         --script check_config \
-        --info all"
+        --info all
